@@ -8,7 +8,10 @@ const ActivityList = (props) => {
             <p className='font-extrabold'>{title} <br /></p>
             <p className='mt-5'>{details}</p> <br />
             <p className='font-bold'>For Age: {age}</p>
-            <p>Time required: {time}</p>
+            <p className='font-bold'>Time required: {time}</p>
+            <button className='rounded p-2 bg-fuchsia-500 w-full'>
+                <p>Add to list</p>
+            </button>
         </div>
     );
 };
