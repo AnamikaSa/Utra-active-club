@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../images/health.png'
 const Fitnes = () => {
     return (
-        <div>
+        <div className=' p-5 bg-fuchsia-300'>
             <div className='flex'>
             <img className='w-24' src={logo} alt=""/>
             <h1 className='text-purple-500 text-2xl font-bold mt-8'>Fitness Club <span className='text-purple-900'>ByAnamika </span></h1>

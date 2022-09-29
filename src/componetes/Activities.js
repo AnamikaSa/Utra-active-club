@@ -10,8 +10,8 @@ const Activities = () => {
             .then(data => setActivities(data))
     }, [])
     return (
-        <div className='flex justify-between md:grid-cols-1'>
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-10'>
+        <div className='bg-fuchsia-300 justify-between grid md:grid-cols-2 gap-y-20 p-5'>
+            <div className='grid grid-cols-1 md:grid-cols-3 md:gap-x-56 md:gap-y-24 gap-y-10'>
                 {
                     activities.map(activity => <ActivityList
                         key={activity.id}
@@ -21,8 +21,8 @@ const Activities = () => {
                 }
             </div>
 
-            <div>
-                <div className='flex mr-24'>
+            <div className='md:ml-72 bg-purple-300 p-6'>
+                <div className='flex '>
                     <img className='rounded-full w-12' src={logo} alt="" />
                     <p className='ml-5'>Anamika Sarker <br /> <span>Sydney,   Australia</span></p>
                 </div>
@@ -44,11 +44,10 @@ const Activities = () => {
                 <div>
                     <p className='text-xl font-bold mt-8'>Add A Break</p>
                     <div className='p-6'>
-                        <button className=' rounded-full p-3 bg-purple-500 hover:bg-fuchsia-400'>10s</button>
-                        <button className=' rounded-full p-3 ml-3 bg-purple-500 hover:bg-fuchsia-400'>20s</button>
-                        <button className=' rounded-full p-3 ml-3 bg-purple-500 hover:bg-fuchsia-400'>30s</button>
-                        <button className=' rounded-full p-3 ml-3 bg-purple-500 hover:bg-fuchsia-400'>40s</button>
-                        <button className=' rounded-full p-3 ml-3 bg-purple-500 hover:bg-fuchsia-400'>50s</button>
+                        <button className=' rounded-full p-2 bg-purple-500 hover:bg-fuchsia-400'>10s</button>
+                        <button className=' rounded-full p-2 ml-3 bg-purple-500 hover:bg-fuchsia-400'>20s</button>
+                        <button className=' rounded-full p-2 ml-3 bg-purple-500 hover:bg-fuchsia-400'>30s</button>
+                        <button className=' rounded-full p-2 ml-3 bg-purple-500 hover:bg-fuchsia-400'>40s</button>
                     </div>
                 </div>
 
