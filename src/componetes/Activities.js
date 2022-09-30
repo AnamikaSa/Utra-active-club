@@ -55,7 +55,7 @@ const Activities = () => {
                     <h2 id="accordion-collapse-heading-2">
                         <button type="button"
                             className="flex items-center justify-between w-full p-5 font-medium text-left border border-b-0 border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800  text-gray-900 dark:text-white"
-                            data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+                            data-accordion-target="#accordion-collapse-body-2" aria-expanded="true"
                             aria-controls="accordion-collapse-body-2">
                             <span>Difference between Props And State?</span>
                         </button>
@@ -69,7 +69,7 @@ const Activities = () => {
                     <h2 id="accordion-collapse-heading-3">
                         <button type="button"
                             className="flex items-center justify-between w-full p-5 font-medium text-left border border-b-0 border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800  text-gray-900 dark:text-white"
-                            data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+                            data-accordion-target="#accordion-collapse-body-3" aria-expanded="true"
                             aria-controls="accordion-collapse-body-3">
                             <span>For what purpose useEffect used?</span>
 

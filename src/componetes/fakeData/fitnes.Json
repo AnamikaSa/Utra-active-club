@@ -1,52 +1,52 @@
 [
     {
-        "id": "0",
+        "id": 0,
          "title" : "Push-Up",
          "details": " Push-up is a compound exercise that uses muscles in the chest, shoulders, triceps, back, abs, and even the legs",
          "age": "20-40",
-         "time":"35s",
+         "time":35,
          "img": "https://media.gq.com/photos/59712c8b75d2965381f8bf69/16:9/w_2560%2Cc_limit/2017-06_GQ_FITNESS-Push-Ups_3x2.jpg"
     },
     {
-        "id": "1",
+        "id": 1,
          "title" : "Biking",
          "details": "Biking is a top-notch cardio workout. You'll burn about 400 calories an hour. Plus it strengthens your lower body.",
          "age": "20-35",
-         "time":"40s",
+         "time":40,
          "img":"https://www.mensjournal.com/wp-content/uploads/mf/bike.jpg?w=1188&h=630&crop=1&quality=86&strip=all"
     },
     {
-        "id": "2",
+        "id": 2,
          "title" : "Swimming",
          "details": "Swimming is an individual or team racing sport that requires the use of one's entire body to move through water.",
          "age": "20-35",
-         "time":"40 s",
+         "time":40,
          "img":"https://bod-blog-assets.prod.cd.beachbodyondemand.com/bod-blog/wp-content/uploads/2022/06/01124805/how-many-calories-does-swimming-burn-960.png"
     },
     {
-        "id": "3",
+        "id": 3,
          "title" : "Dancing",
          "details": "Fitness dancing differs from what you'd do, say, at a wedding reception only in that it turns up the speed and intensity.",
          "age": "20-35",
-         "time":"40 s",
+         "time":40,
          "img":"https://www.verywellfit.com/thmb/WtaRzGOCbJdVYFlWr_7VOfwn_Ow=/3000x2002/filters:no_upscale():max_bytes(150000):strip_icc()/zumba-fatcamera-c9d4ee824a0f4fda883484f878abc8ae.jpg"
     },
 
     {
-        "id": "4",
+        "id": 4,
          "title" : "Climbing",
          "details": "Climbing is a full-body workout, and you'll need the power of your glutes, along with your leg muscles, to propel yourself upward.",
          "age": "20-35",
-         "time":"40 s",
+         "time":40,
          "img":"https://s3.amazonaws.com/images.gearjunkie.com/uploads/2020/01/DSC_9620.jpg"
     },
 
     {
-        "id": "5",
+        "id": 5,
          "title" : "Jogging",
          "details": "Jogging is form of aerobic exercise.It's a physical activity that produces energy by combining oxygen with blood glucose,body fat.",
          "age": "20-35",
-         "time":"40 s",
+         "time":40,
          "img":"https://apollosugar.com/wp-content/uploads/2017/12/diabetes-diet.jpg"
     }
 

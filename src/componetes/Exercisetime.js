@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import logo from '../images/1648826689453.jpg';
 
 const Exercisetime = (props) => {
@@ -16,7 +18,12 @@ const Exercisetime = (props) => {
         setBreaktime(breaktime)
         localStorage.setItem('breaktime', JSON.stringify(breaktime));
 
-    }
+    };
+    const showToastMessage = () => {
+            toast('Yes! Finished The Activity', {
+                position: toast.POSITION.TOP_RIGHT
+            });
+        };
 
     useEffect(() => {
         const breaktime = localStorage.getItem('breaktime');
@@ -28,6 +35,8 @@ const Exercisetime = (props) => {
         }
 
     }, []);
+
+    
 
     return (
         <div>
@@ -65,10 +74,13 @@ const Exercisetime = (props) => {
                     <p className='text-xl font-bold mt-8 ml-6'>Exercise Details</p>
                     <p className='p-5 text-lg ml-6'>Exercise time : {totalTime}<span> Seconds</span></p>
                     <p className='p-5 text-lg ml-6'>Break Time    : {breaktime} <span> min</span> </p>
-                    <button className='rounded p-2 bg-fuchsia-500 w-full hover:bg-purple-400'>Activity Completed</button>
+                    <button onClick={showToastMessage}  className='rounded p-2 bg-fuchsia-500 w-full hover:bg-purple-400'>Activity Completed</button>
+                    <ToastContainer/>
                 </div>
             </div>
     );
+    
 };
+
 
 export default Exercisetime;
