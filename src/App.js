@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import Activities from './componetes/Activities';
 import Fitnes from './componetes/Fitnes';
