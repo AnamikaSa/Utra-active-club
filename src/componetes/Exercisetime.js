@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from '../images/1648826689453.jpg';
 
 const Exercisetime = (props) => {
@@ -8,6 +8,27 @@ const Exercisetime = (props) => {
     for (const activity of myBio){
         totalTime+=activity.time;
     }
+    const [breaktime, setBreaktime] = useState([]);
+
+    const handleAddBreaktime = (breaktime) => {
+
+        console.log(breaktime);
+        setBreaktime(breaktime)
+        localStorage.setItem('breaktime', JSON.stringify(breaktime));
+
+    }
+
+    useEffect(() => {
+        const breaktime = localStorage.getItem('breaktime');
+        if (breaktime) {
+            setBreaktime(JSON.parse(breaktime));
+        }
+        else {
+            setBreaktime(0);
+        }
+
+    }, []);
+
     return (
         <div>
                 <div className='flex justify-center'>
@@ -31,19 +52,19 @@ const Exercisetime = (props) => {
 
                 <div>
                     <p className='text-xl font-bold mt-8 ml-6'>Add A Break</p>
-                    <div className='p-6 ml-5'>
-                        <button className=' rounded-full p-2 bg-purple-500 hover:bg-fuchsia-400'>10s</button>
-                        <button className=' rounded-full p-2 ml-3 bg-purple-500 hover:bg-fuchsia-400'>20s</button>
-                        <button className=' rounded-full p-2 ml-3 bg-purple-500 hover:bg-fuchsia-400'>30s</button>
-                        <button className=' rounded-full p-2 ml-3 bg-purple-500 hover:bg-fuchsia-400'>40s</button>
-                        <button className=' rounded-full p-2 ml-3 bg-purple-500 hover:bg-fuchsia-400'>50s</button>
+                    <div className='p-5 ml-1'>
+                        <button onClick={() => handleAddBreaktime(10)} className=' rounded-full p-2 bg-purple-500 hover:bg-fuchsia-400'>10m</button>
+                        <button onClick={() => handleAddBreaktime(20)} className=' rounded-full p-2 ml-3 bg-purple-500 hover:bg-fuchsia-400'>20m</button>
+                        <button onClick={() => handleAddBreaktime(30)} className=' rounded-full p-2 ml-3 bg-purple-500 hover:bg-fuchsia-400'>30m</button>
+                        <button onClick={() => handleAddBreaktime(40)} className=' rounded-full p-2 ml-3 bg-purple-500 hover:bg-fuchsia-400'>40m</button>
+                        <button onClick={() => handleAddBreaktime(50)} className=' rounded-full p-2 ml-3 bg-purple-500 hover:bg-fuchsia-400'>50m</button>
                     </div>
                 </div>
                 
                 <div>
                     <p className='text-xl font-bold mt-8 ml-6'>Exercise Details</p>
-                    <p className='p-5 text-lg ml-6'>Exercise time : {totalTime}<span> s</span></p>
-                    <p className='p-5 text-lg ml-6'>Break Time    : </p>
+                    <p className='p-5 text-lg ml-6'>Exercise time : {totalTime}<span> Seconds</span></p>
+                    <p className='p-5 text-lg ml-6'>Break Time    :{breaktime} <span> min</span> </p>
                     <button className='rounded p-2 bg-fuchsia-500 w-full hover:bg-purple-400'>Activity Completed</button>
                 </div>
             </div>
