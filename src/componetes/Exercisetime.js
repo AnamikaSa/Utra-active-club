@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import logo from '../images/1648826689453.jpg';
@@ -42,7 +44,7 @@ const Exercisetime = (props) => {
         <div>
                 <div className='flex justify-center'>
                     <img className='rounded-full w-12' src={logo} alt="" />
-                    <p className='ml-5'>Anamika Sarker <br /> <span>Sydney,   Australia</span></p>
+                    <p className='ml-5'>Anamika Sarker <br /> <FontAwesomeIcon icon={faLocationDot}/> <span> Sydney,   Australia</span></p>
                 </div>
                 <div className='flex mt-10 ml-14'>
                     <div className='pr-5 ml-5'>
