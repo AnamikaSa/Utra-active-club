@@ -12,7 +12,7 @@ const Exercisetime = (props) => {
 
     const handleAddBreaktime = (breaktime) => {
 
-        console.log(breaktime);
+        // console.log(breaktime);
         setBreaktime(breaktime)
         localStorage.setItem('breaktime', JSON.stringify(breaktime));
 
@@ -64,7 +64,7 @@ const Exercisetime = (props) => {
                 <div>
                     <p className='text-xl font-bold mt-8 ml-6'>Exercise Details</p>
                     <p className='p-5 text-lg ml-6'>Exercise time : {totalTime}<span> Seconds</span></p>
-                    <p className='p-5 text-lg ml-6'>Break Time    :{breaktime} <span> min</span> </p>
+                    <p className='p-5 text-lg ml-6'>Break Time    : {breaktime} <span> min</span> </p>
                     <button className='rounded p-2 bg-fuchsia-500 w-full hover:bg-purple-400'>Activity Completed</button>
                 </div>
             </div>
