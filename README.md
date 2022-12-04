@@ -1,4 +1,8 @@
 # Getting Started with Create React App
+## live link: https://ultra-active-club-anamikasa.netlify.app/
+### check out the live site to understand the pattern first
+### here added the calculation od requried time
+### to complete the task to ashow that used Toaster (popup the notification)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
